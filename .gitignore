@@ -4,5 +4,6 @@
 model_train/images/
 model_train/images_resnet50/
 model_train/test_images/
+model_serve/test_images/
 model_train/models/
 model_serve/models/
