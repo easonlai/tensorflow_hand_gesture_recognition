@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hand Gesture Regocnition System</title>
+</head>
+<body style="text-align:center;" onload="checkResult()">
+<script>
+function checkResult() {
+  gesture = "{{gesture}}";
+  var text = "";
+  if (gesture == "ok"){
+    text = "ok";
+    document.getElementById('lightbulb_on').style.visibility='visible';
+  } else {
+    text = "thumb";
+    document.getElementById('lightbulb_off').style.visibility='visible';
+  }
+  //document.getElementById("demo").innerHTML = text;
+  //document.getElementById('lightbulb_on').style.visibility='visible';
+}
+</script>
+<p>
+  <Head>Hand Gesture Recognition System</Head>
+</p>
+<p>
+  Your currently gesture is {{gesture}}.
+</p>
+<p>
+  <img src="/static/images/lightbulb_on.png" id="lightbulb_on" style="visibility:hidden"/>
+  <img src="/static/images/lightbulb_off.png" id="lightbulb_off" style="visibility:hidden"/>
+</p>
+<p id="demo"></p>
+</body>
+</html>
